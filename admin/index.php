@@ -1,0 +1,5 @@
+<?php
+
+Include('registro.php');
+
+?> 
