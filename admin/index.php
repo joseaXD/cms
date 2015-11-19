@@ -1,5 +1,4 @@
 <?php
 
-Include('registro.php');
 
 ?> 

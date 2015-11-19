@@ -32,7 +32,7 @@ if($_POST) {
 <div id="registro">
 
    <form method="post" action="entrada.php">
-        <label>Nombre de usuario: </label><input type="text" name="usuario" value="<?php echo $usuario ?>"><br>
+        <label>Nombre de usuario: </label><input type="text" name="usuario"><br>
         <label>Contraseña </label><input type="password" name="contrasena"><br>
         <div class="submit">
             <input type="submit" value="Entrar">
