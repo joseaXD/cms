@@ -4,9 +4,9 @@ if($_POST) {
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
      
-    include 'includes/config.php';
+    include '../includes/config.php';
     $sql = sprintf("SELECT id FROM usuarios WHERE usuario = '%s' and contrasena =  '%s'",
-        mysql_real_escape_string($username),
+        mysql_real_escape_string($usuario),
         mysql_real_escape_string(md5($contrasena)));
     $res = mysql_query($sql);
     if (!$res) die('Invalid query: ' . mysql_error());
@@ -31,8 +31,8 @@ if($_POST) {
 <body>
 <div id="registro">
 
-    <form method="post" action="entrada.php">
-        <label>Nombre de usuario: </label><input type="text" name="usuario"><br>
+   <form method="post" action="entrada.php">
+        <label>Nombre de usuario: </label><input type="text" name="usuario" value="<?php echo $usuario ?>"><br>
         <label>Contraseña </label><input type="password" name="contrasena"><br>
         <div class="submit">
             <input type="submit" value="Entrar">
