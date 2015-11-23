@@ -103,3 +103,46 @@ a {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
+/*****************************/
+#contenido {
+    clear:both;
+}
+ 
+#contenido_izq {
+    float: left;
+    width: 700px;
+}
+ 
+#barra_lateral {
+    float: right;
+    width: 250px;
+ 
+}
+
+/*****************************/
+
+#articulos {
+    width:1000px;
+}
+ 
+#articulos th {
+    text-align: left;
+    padding: 15px;
+}
+ 
+#articulos tr {
+    background: #ddd;
+}
+ #articulos a {
+     color: #454545;
+ }
+  
+ #articulos td {
+     text-align: center;
+ }
+  
+#articulos td.titulo {
+    width: 850px;
+    padding:5px 5px 5px 30px;
+    text-align:left;
+}
